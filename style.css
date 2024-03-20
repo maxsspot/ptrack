@@ -1,0 +1,105 @@
+* {
+    margin:0;
+    outline:none;
+    padding:0;
+    font-family:"Poppins", sans-serif;
+}
+
+body {
+    text-align:center;	
+    height:100vh;
+}
+
+button {
+    cursor:pointer;
+}
+
+#insertNew, .buttons {
+    width:150px;
+    height:40px;
+    border:transparent;
+    border-radius:50px;
+    background-color:skyblue;
+}
+
+.buttons {
+    width:100px;
+}
+
+.buttons:hover {
+    text-decoration:underline;
+}
+
+#insertNew:hover {
+    text-decoration:underline;
+}
+
+#money {
+    background-color:lightgray;
+    width:150px;
+    border-radius:10px;
+    margin:auto;
+    padding:10px;
+}
+
+#history {
+    width:280px;
+    background-color:lightgray;
+    border-radius:10px;
+    margin:auto;
+    padding:10px;
+    height:250px;
+    overflow:auto;
+}
+
+#nohistory {
+    color:grey;
+}
+
+#newTransaction {
+    width:100%;
+    background-color:lightgray;
+    height:100%;
+    position:fixed;
+    opacity:0;
+    pointer-events:none;
+    transition:all 0.5s;
+}
+
+select {
+    border-radius:5px;
+    padding:5px;
+    cursor:pointer;
+    border:grey solid 1px;
+}
+
+input {
+    margin:5px;
+    width:150px;
+    height:30px;
+    text-indent:5px;
+    border-radius:5px;
+    border:grey solid 1px;
+}
+
+#amount {
+    width:50px;
+}
+
+hr {
+    border:black solid 1px;
+    background-color:black;
+    border-radius:50%;
+}
+
+.footer {
+    cursor:pointer;
+    padding:5px;
+    user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+}
+
+.footer:hover {
+    text-decoration:underline;
+}

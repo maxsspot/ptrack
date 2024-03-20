@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src = "script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<title>Payment Tracker</title>
+	</head>
+	<body>
+        <div id = "newTransaction">
+            <br>
+            <h1>New Transaction</h1>
+            <br>
+            <label for = "title">Title: </label>
+            <input id = "title" />
+            <br>
+            <label for = "date">Date: </label>
+            <input id = "date" type = "date" />
+            <br>
+            <label for = "paymentType">Type: </label>
+            <select id = "paymentType">
+                <option value = "Payment">Payment</option>
+                <option value = "Deposit">Deposit</option>
+            </select>
+            <br>
+            <label for = "amount">Amount: </label>
+            <input id = "amount" />
+            <br><br>
+            <button class="buttons" onclick = "insert()">Insert</button>
+            <button class="buttons" onclick = "closeInsert()">Cancel</button>
+        </div>
+        <br>
+		<h1>Payment Tracker</h1><br>
+        <h1 id = "money">$<span contenteditable="true" id = "cashValue">0</span></h1><br>
+        <button id = "insertNew" onclick = "insertNew()">Insert Transaction</button>
+        <br><br>
+        <h2>History</h2>
+        <div id = "history">
+            
+        </div>
+        <br>
+        <footer>
+            <span class = "footer" onclick = "reset()">Reset</span>
+            <span class = "footer">Backup</span>
+            <span class = "footer">Load</span>
+        </footer>
+        <br>
+    </body>
+</html>
